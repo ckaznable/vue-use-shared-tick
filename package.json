@@ -1,0 +1,38 @@
+{
+  "name": "vue-use-shared-tick",
+  "description": "Vue 3 hooks run function in same setInterval",
+  "version": "1.0.0",
+  "type": "module",
+  "types": "dist/main.d.ts",
+  "license": "MIT",
+  "repository": "github:ckaznable/vue-use-shared-tick",
+  "homepage": "https://github.com/ckaznable/vue-use-shared-tick",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/use-shared-tick.umd.cjs",
+  "module": "./dist/use-shared-tick.js",
+  "exports": {
+    ".": {
+      "import": "./dist/use-shared-tick.js",
+      "require": "./dist/use-shared-tick.umd.cjs"
+    }
+  },
+  "scripts": {
+    "dev": "vite -c vite.page.ts",
+    "build": "vue-tsc && vite build",
+    "build:page": "vue-tsc && vite build -c vite.page.ts",
+    "preview": "vite preview"
+  },
+  "peerDependencies": {
+    "vue": "^3.0.0",
+    "shared-tick": "^1.0.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.0.0",
+    "typescript": "^4.9.3",
+    "vite": "^4.0.0",
+    "vite-plugin-dts": "^1.7.1",
+    "vue-tsc": "^1.0.11"
+  }
+}
