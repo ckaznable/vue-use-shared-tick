@@ -1,3 +1,6 @@
+[![npm version](https://img.shields.io/npm/v/vue-use-shared-tick?color=g)](https://www.npmjs.com/package/vue-use-shared-tick)
+
+
 # Vue useSharedTick
 
 Vue 3 hook run function in same `setInterval`
